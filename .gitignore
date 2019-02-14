@@ -1,0 +1,8 @@
+*.pyc
+*~
+*.txt
+*.DS_Store
+*.zip
+.idea
+.ipynb_checkpoints
+

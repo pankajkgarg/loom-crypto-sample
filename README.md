@@ -1,4 +1,4 @@
-##Loom Crypto Basic User Registration API
+## Loom Crypto Basic User Registration API
 
 ### Problem statement
 Build a simple server http or tcp text server
@@ -12,7 +12,7 @@ Build a simple server http or tcp text server
 
 4. Create your own secondary index on LevelDB to query by email, so you don’t have to scan the entire database
 
-###Design Decisions
+### Design Decisions
 
 All business logic for user is stored in `loom_crypto/models/user.py`
 Server code is located in `loom_crypto/server.py`
@@ -30,8 +30,8 @@ We will store data as following
 
 
 
-####Tests
+#### Tests
 See tests in `tests.py`
 
-####Config
+#### Config
 To change production database dir, define an enviornment variable `DATABASE_DIR`

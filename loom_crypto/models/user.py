@@ -61,8 +61,8 @@ class User(object):
 		}
 		data_json = cls.encode_user_data(data)
 
-		database.store(uid, data_json)
-		database.store(email, uid)
+		database.store("uid={}".format(uid), data_json)
+		database.store("email={}".format(email), uid)
 
 		return uid
 
@@ -80,7 +80,7 @@ class User(object):
 		if not uid:
 			raise None
 
-		encoded_user_data = database.retrieve(uid)
+		encoded_user_data = database.retrieve("uid={}".format(uid))
 		if not encoded_user_data:
 			return None
 
@@ -109,7 +109,7 @@ class User(object):
 		"""
 		email = cls.sanitize_email(email)
 
-		return database.retrieve(email)
+		return database.retrieve("email={}".format(email))
 
 
 

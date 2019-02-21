@@ -1,6 +1,8 @@
 ## Loom Crypto Basic User Registration API
 
 
+
+
 ### Design Decisions
 
 All business logic for user is stored in `loom_crypto/models/user.py`
@@ -21,6 +23,8 @@ We will store data as following
 
 #### Tests
 See tests in `tests.py`
+To run the tests `pipenv run python tests.py`
+
 
 #### Config
 To change production database dir, define an enviornment variable `DATABASE_DIR`
